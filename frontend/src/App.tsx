@@ -6,9 +6,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout > Home Page </Layout>} />
-          <Route path="/search" element={<Layout > Search Page </Layout>} />
-          <Route path="/signin" element={<Layout > Login/Signup </Layout>} />
+          <Route path="/" element={<Layout> <p> Home Page</p> </Layout>} />
+          <Route path="/search" element={<Layout> <p>Search Page</p> </Layout>} />
+          <Route path="/signin" element={<Layout> <p>Login/Signup</p> </Layout>} />
         </Routes>
       </Router>
     </>
