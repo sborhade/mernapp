@@ -6,7 +6,9 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Layout></Layout>} />
+          <Route path="/" element={<Layout > Home Page </Layout>} />
+          <Route path="/search" element={<Layout > Search Page </Layout>} />
+          <Route path="/signin" element={<Layout > Login/Signup </Layout>} />
         </Routes>
       </Router>
     </>
