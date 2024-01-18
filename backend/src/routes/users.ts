@@ -22,7 +22,7 @@ router.post("/register", async (req: Request, res: Response) => {
 
         const token = jwt.sign({ userId: user._id },
             process.env.JWT_SECRET_KEY as string,
-            { expiresin: "1d" });
+            { expiresIn: "1d" });
 
         res.cookie("auth_token", token, {
             httpOnly: true,
@@ -33,6 +33,8 @@ router.post("/register", async (req: Request, res: Response) => {
         return res.sendStatus(200);
 
     } catch (error) {
+        console.log(error);
+        
         return res.status(500).send({ message: "something went wrong" });
     }
 });
