@@ -11,11 +11,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
-app.use("/api/users ", userRoutes);
+app.use("/api/users", userRoutes);
 
-app.get("/api/test", async (req: Request, res: Response) => {
-    res.json({ message: "Hello from get rest endpoint" });
-});
+// app.get("/api/test", async (req: Request, res: Response) => {
+//     res.json({ message: "Hello from get rest endpoint" });
+// });
 
 app.listen(7000, () => {
     console.log("Server  running on localhost:7000");
